@@ -5,6 +5,12 @@ This module contains unit tests for the simple_calculator function defined in la
 """
 
 import pytest
+import sys
+import os
+
+# Add the parent directory to sys.path to allow imports from "labs"
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from labs.lab_1.lab_1b import simple_calculator
 
 def test_addition():
